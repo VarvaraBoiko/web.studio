@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./reset.css">
@@ -12,7 +13,7 @@
     <a class="logo" href="">Web <span class="header-logo" >Studio</span></a>
     <nav class="nav">
         <ul class="nav-list" >
-            <li><a class="nav-list-link" href="">Студія</a></li>
+            <li><a class="nav-list-link current" href="">Студія</a></li>
             <li><a class="nav-list-link" href="./portfolio.html">Портфоліо</a></li>
             <li><a class="nav-list-link" href="">Контакти</a></li>
         </ul>
@@ -25,7 +26,7 @@
    <main>
     <section class="section-hero" >
         <h1 class="section-hero-title" >Ефективні рішення для вашого бізнесу</h1>
-        <button class="section-hero-btn" >Замовити послугу</button>
+        <button class="section-hero-btn" data-modal-open >Замовити послугу</button>
     </section>
     <section class="section-features" >
         <ul class="features-list" >
@@ -53,33 +54,33 @@
          Чим ми замаємось
         </h3>
         <ul class="work-list" >
-            <li><img src="./img (2).png" alt=""></li>
-            <li><img src="./img (1).png" alt=""></li>
-            <li><img src="./img (2).png" alt=""></li>
+            <li><img src="./portfolio-img/worklist1.png" alt=""></li>
+            <li><img src="./portfolio-img/worklist2.png" alt=""></li>
+            <li><img src="./portfolio-img/worklist3.png" alt=""></li>
         </ul>
     </section>
     <section class="section-team">
         <h3 class="team-title" >Наша команда</h3>
         <ul class="team-list" >
             <li>
-                <img src="./img (1).jpg" width="270"alt="">
+                <img src="./portfolio-img/igor.jpg" width="270"alt="">
                 <h5 class="team-list-title" >Ігор Дем'яненко</h5>
                 <p class="team-list-text" >Product Designer</p>
             </li>
             <li>
-                <img src="./img (5).jpg" alt=""
+                <img src="./portfolio-img/olga.jpg" alt=""
                 width="270"
                 height="260">
                 <h5 class="team-list-title" >Ольга Рєпіна</h5>
                 <p class="team-list-text" >Frontend Developer</p>
             </li>
             <li>
-                <img src="./img (7).jpg" width="270" alt="">
+                <img src="./portfolio-img/mykola.jpg" width="270" alt="">
                 <h5 class="team-list-title" >Микола Тарасов</h5>
                 <p class="team-list-text" >Marketing</p>
             </li>
             <li>
-                <img src="./img (8).jpg" width="270" alt="">
+                <img src="./portfolio-img/myhailo.jpg" width="270" alt="">
                 <h5 class="team-list-title" >Михайло Єрмаков</h5>
                 <p class="team-list-text" >UI Designer</p>
             </li>
@@ -87,7 +88,9 @@
     </section>
    </main>
    <footer class="footer" >
-   <div class="box">
+  
+    
+    <div class="box">
      <a href="" class="logo">Web<span class="footer-logo">Studio</span></a>
     <address class="address">
         <ul class="address-list">
@@ -96,7 +99,26 @@
             <li class="address-list-item"><a href="" class="address-list-link">+38 096 111 11 11</a></li>
         </ul>
     </address>
+</div>
    </footer>
-   </div>
+
+   <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button  class="closebtn" data-modal-close >closed</button>
+    <form action="">
+            <h1>Отримати консульнтацію</h1>
+            <input  class="inputinform"   placeholder= "Iм'я" type="text">
+            <input  class="inputinform" placeholder= "Teлeфoн" type="tel">
+            <input  class="inputinform"    placeholder= "Повідомлення" type="text">
+            <input   class="inputinform"  placeholder= "Повідомлення" type="text">
+            <div class="checkform">
+            <input type="checkbox">
+            <p class="rozform">Погоджуюся з розсилкою та приймаю Умови договору</p>
+            </div>
+            <button class="buttonform">Відправити</button>
+            </form>
+    </div>
+</div>
+<script src="./script.js"></script>
 </body>
 </html> 
