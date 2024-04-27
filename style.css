@@ -289,3 +289,10 @@ letter-spacing: 0.03em;
 text-align: center;
 
     }
+    .projectslist{
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+         margin-left: 12%;
+         margin-top: 5%;
+     }
